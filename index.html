@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cryptography</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="menu-bar">
+		<ul>
+		<li class="active"> <a href="#">Home</a></li>
+		<li> <a href="#">Algorithms</a> <i class="fa-solid fa-arrow-down"></i>
+			<div class="sub-menu">
+				<ul>
+					<li onclick="getCipherName('Caesar')"> <a href="#">Caesar</a> </li>
+					<li onclick="getCipherName('Vigenere')"> <a href="#">Vigenere</a> </li>
+					
+				</ul>
+			</div>
+
+		</li>
+	</ul>
+	</div>
+
+	<div class="showAlgoName">
+		<h2 id="algoName">Please Select an algorithm</h2>
+	</div>
+
+	<div class="cipherArea">
+		<div class="inputCipher">
+			<h3>Text Input</h3>
+
+			<p>key</p> <input type="text" id="key">
+			<p>Text</p> <input type="text" id="inputText">
+
+			<button id="encryptButton">Encrypt</button>
+
+			<p>key</p> <input type="text" id="key2">
+			<p>Text</p> <input type="text" id="inputText2">
+
+			<button id="decryptButton">Decrypt</button>
+		</div>
+
+
+		<div class="outputCipher">
+			<h3>Output Cipher</h3>
+			<p id="showCipherText"></p>
+		</div>
+
+	</div>
+	
+	
+
+<script src="script.js"></script>
+</body>
+</html>
